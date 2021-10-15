@@ -104,8 +104,7 @@ module.exports = function(eleventyConfig) {
     templateFormats: [
       "md",
       "njk",
-      "html",
-      "liquid"
+      "html"
     ],
 
     // -----------------------------------------------------------------
@@ -129,7 +128,7 @@ module.exports = function(eleventyConfig) {
     htmlTemplateEngine: "njk",
 
     // Opt-out of pre-processing global data JSON files: (default: `liquid`)
-    dataTemplateEngine: false,
+    dataTemplateEngine: "njk",
 
     // These are all optional (defaults are shown):
     dir: {
