@@ -6,7 +6,7 @@
   "feed": {
     "subtitle": "Documenting my journey into open-source development alongside other things.",
     "filename": "feed.xml",
-    "path": "/feed/feed.xml",
+    "path": "/feed/feed.njk",
     "id": "https://crimsontome.github.io/"
   },
   "jsonfeed": {
