@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Raspberry Pi</title>
+    <meta name="description" content="An introduction to the Raspberry Pi foundation.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.njk" type="application/atom+xml" title="crimsontome.github.io">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="crimsontome.github.io">
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="/">crimsontome.github.io</a></h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/posts/">Archive</a></li>
+        <li class="nav-item"><a href="/about/">About Me</a></li>
+      </ul>
+    </header>
+
+    <main class="tmpl-post">
+
+
+      <h1>Introduction to Raspberry Pi</h1>
+
+<time datetime="2021-10-15">15 Oct 2021</time><a href="/tags/first-post/" class="post-tag">first post</a>
+
+<h1 id="so-you-want-to-find-out-about-the-raspberry-pi" tabindex="-1">So you want to find out about the Raspberry Pi? <a class="direct-link" href="#so-you-want-to-find-out-about-the-raspberry-pi" aria-hidden="true">#</a></h1>
+<p>I would be surprised if you've never heard of them, since they seem to have exploded in popularity in recent years. They are very popular with those who want to get into programming and electronics, or Linux in general.</p>
+<p><em>Just a quick disclaimer, though I have been using Pis in some form for over 5 years now I can only really say I  have casual experience with Pis and as such what is written here may be subjective or incorrect in some ways. I suggest you do your own research if you want to get into them, or if you're someone with knowledge of them and want to correct me feel free to contact me.</em></p>
+<h2 id="but-first-just-a-little-bit-of-history" tabindex="-1">But first, just a little bit of history <a class="direct-link" href="#but-first-just-a-little-bit-of-history" aria-hidden="true">#</a></h2>
+<p>The Raspberry Pi Foundation (RPF), based in the UK launched their first model of the Raspberry Pi in 2012, this was the Model B. The RPF has made one of the first affordable credit card sized computers. The Pis are designed to be intuitive (especially with Raspbian Desktop - its main OS) and suitable for educational purposes. They are still making models to this day, with the Raspberry Pi 400 being launched in November 2020 and the Pico (Microcontroller) being released in 2021.</p>
+<h2 id="so-why-should-you-get-a-pi" tabindex="-1">So, why should you get a Pi? <a class="direct-link" href="#so-why-should-you-get-a-pi" aria-hidden="true">#</a></h2>
+<p>It may seem like these single board computers are a bit underwhelming. What, the best model only has 8GB of RAM?! Well you see not everyone has the money to spend hundreds or even thousands of pounds on a computer. This leads me to what I think is the best thing about these: they're cheap. For example the Raspberry Pi Zero costs ~£5 and can do plenty of things that it's successors can. Sure it does it to a lesser extent but to me at least that is part of the fun, given what you've got how can I make <em>x</em> work?<br>
+Another reason is that if you have an idea, you can probably make it with a Raspberry Pi. As you'll see in the resources section, there are so many different things you can do, and for a lot of them you don't really need to know that much beforehand, just get stuck in. Want to make a NAS, retro games player, host your own website, play around with some electronics? The Pi has you covered.</p>
+<h2 id="series" tabindex="-1">Series <a class="direct-link" href="#series" aria-hidden="true">#</a></h2>
+<h3 id="zero" tabindex="-1">Zero <a class="direct-link" href="#zero" aria-hidden="true">#</a></h3>
+<p>The Raspberry Pi Zero (released in 2015) is a much smaller device - around half the size of the Raspberry Pi model A+. The original Zero had these specifications:</p>
+<ul>
+<li>1GHz single-core CPU</li>
+<li>512MB RAM</li>
+<li>Mini HDMI port</li>
+<li>Micro USB OTG port</li>
+<li>Micro USB power</li>
+<li>HAT-compatible 40-pin header</li>
+<li>Composite video and reset headers</li>
+<li>CSI camera connector</li>
+</ul>
+<p>Given its size and low specifications, it is highly portable and has very low power consumption. This also makes it suitable for use in embedded systems. For example it would work well in a drone with a camera attached to the Zero.</p>
+<h3 id="pico" tabindex="-1">Pico <a class="direct-link" href="#pico" aria-hidden="true">#</a></h3>
+<p>The Raspberry Pi Pico was released in 2021 with a price of ~£3 with these features:</p>
+<ul>
+<li>RP2040 microcontroller chip designed by Raspberry Pi in the United Kingdom</li>
+<li>Dual-core Arm Cortex M0+ processor, flexible clock running up to 133 MHz</li>
+<li>264KB of SRAM, and 2MB of on-board Flash memory</li>
+<li>Castellated module allows soldering direct to carrier boards</li>
+<li>USB 1.1 with device and host support</li>
+<li>Low-power sleep and dormant modes</li>
+<li>Drag-and-drop programming using mass storage over USB</li>
+<li>26 × multi-function GPIO pins</li>
+<li>2 × SPI, 2 × I2C, 2 × UART, 3 × 12-bit ADC, 16 × controllable PWM channels</li>
+<li>Accurate clock and timer on-chip</li>
+<li>Temperature sensor</li>
+<li>Accelerated floating-point libraries on-chip</li>
+<li>8 × Programmable I/O (PIO) state machines for custom peripheral support</li>
+</ul>
+<p>Like the Zero, the Pico can also be used as part of an embedded system such as acting as a temperature sensor for someewhere like a greenhouse</p>
+<h3 id="other" tabindex="-1">Other <a class="direct-link" href="#other" aria-hidden="true">#</a></h3>
+<p>A popular model of the Raspberry Pi is the Model 4B:</p>
+<ul>
+<li>Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz</li>
+<li>2GB, 4GB or 8GB LPDDR4-3200 SDRAM (depending on model)</li>
+<li>2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE</li>
+<li>Gigabit Ethernet</li>
+<li>2 USB 3.0 ports; 2 USB 2.0 ports.</li>
+<li>Raspberry Pi standard 40 pin GPIO header</li>
+<li>2 × micro-HDMI ports (up to 4kp60 supported)</li>
+<li>2-lane MIPI DSI display port</li>
+<li>2-lane MIPI CSI camera port</li>
+<li>4-pole stereo audio and composite video port</li>
+<li>H.265 (4kp60 decode), H264 (1080p60 decode, 1080p30 encode)</li>
+<li>OpenGL ES 3.1, Vulkan 1.0</li>
+<li>Micro-SD card slot for loading operating system and data storage<br>
+-5V DC via USB-C connector (minimum 3A)</li>
+<li>5V DC via GPIO header (minimum 3A*)</li>
+<li>Power over Ethernet (PoE) enabled (requires separate PoE HAT)</li>
+</ul>
+<p>The Pi Model 4B can be powerful enough to run some quite intensive things, given the right environment. For example (though not with a 4B) I used to run Retropie for running some retro games with decent performance.</p>
+<h2 id="links-to-some-resources" tabindex="-1">Links to some resources <a class="direct-link" href="#links-to-some-resources" aria-hidden="true">#</a></h2>
+<ol>
+<li><a href="https://www.raspberrypi.org/">Raspberry Pi Official site</a></li>
+<li><a href="https://www.raspberrypi.org/documentation/">Raspberry Pi Documentation</a></li>
+<li><a href="https://www.raspberrypi.org/forums/">Raspberry Pi Forums</a></li>
+<li><a href="https://www.youtube.com/c/raspberrypi">Raspberry Pi YouTube Channel</a></li>
+<li><a href="https://projects.raspberrypi.org/en">Sample Raspberry Pi Projects</a></li>
+<li><a href="https://raspberrypi.stackexchange.com/">Raspberry Pi StackExchange</a></li>
+<li><a href="https://opensource.com/tags/raspberry-pi">Opensource.com Pi</a></li>
+<li><a href="https://www.instructables.com/circuits/raspberry-pi/projects/">Instructables Pi</a></li>
+<li><a href="https://hackaday.io/projects?tag=raspberry%20pi">Hackaday Pi</a></li>
+<li><a href="https://www.youtube.com/c/JeffGeerling">Jeff Geerling's YouTube Channel</a> - Jeff has a lot of videos based on Raspberry Pi projects along with some unusual testing like attempting to get modern graphics cards to function on the Pi (spoiler alert he's had very limited success with this). He also has a series on Ansible, Kubernetes and more.</li>
+<li><a href="https://pipci.jeffgeerling.com/">Jeff Geerling's Pi PCI site</a></li>
+<li><a href="https://www.youtube.com/c/NODEtv">N-O-D-E</a></li>
+<li><a href="https://www.youtube.com/c/NetworkChuck/videos">NetworkChuck's YouTube Channel</a> - has some good pi videos</li>
+<li><a href="https://retropie.org.uk/">Retropie</a> - If you want to relive the glory days of retro games</li>
+<li><a href="https://www.experts-exchange.com/articles/34931/HOW-TO-Install-and-Configure-VMware-vSphere-Hypervisor-7-0-ESXi-7-0-ARM-on-a-Raspberry-Pi-4.html">Setting up VMware on a Raspberry Pi 4</a></li>
+<li><a href="https://turingpi.com/v2/">TuringPi</a></li>
+<li><a href="https://pinout.xyz/">Pinout</a></li>
+<li><a href="https://starbeamrainbowlabs.com/blog/article.php?article=posts/242-Learn-Your-Terminal.html">SBRL blog</a></li>
+</ol>
+<p><em>Resources compiled by various Freeside members, a huge thanks to everyone who helped!</em></p>
+
+<hr>
+<ul><li>Previous: <a href="/posts/fourthpost/">This is my fourth post.</a></li>
+</ul>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Current page: /posts/firstpost/ -->
+  </body>
+</html>
